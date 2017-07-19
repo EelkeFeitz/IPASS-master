@@ -1,0 +1,24 @@
+\hypertarget{main_8cpp}{}\section{C\+:/\+Users/eelke/\+Documents/\+School/\+Vervolgopleiding/\+Hogeschool Utrecht/\+Leerjaar 1/\+Blok 4/\+O\+O\+P\+C/v1oopc-\/practica/\+I\+P\+A\+S\+S4.0/main.cpp File Reference}
+\label{main_8cpp}\index{C\+:/\+Users/eelke/\+Documents/\+School/\+Vervolgopleiding/\+Hogeschool Utrecht/\+Leerjaar 1/\+Blok 4/\+O\+O\+P\+C/v1oopc-\/practica/\+I\+P\+A\+S\+S4.\+0/main.\+cpp@{C\+:/\+Users/eelke/\+Documents/\+School/\+Vervolgopleiding/\+Hogeschool Utrecht/\+Leerjaar 1/\+Blok 4/\+O\+O\+P\+C/v1oopc-\/practica/\+I\+P\+A\+S\+S4.\+0/main.\+cpp}}
+{\ttfamily \#include \char`\"{}hwlib.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}H\+X711.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}load\+\_\+cell.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}tongling\+\_\+rly.\+hpp\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}{main} (void)
+\begin{DoxyCompactList}\small\item\em main Initializes the requiered pins. sets up an bit-\/banged i2c interface. Keeps checking for the presence of a cup on the scale. If there is, closes solenoid valves so air pressure can build up in the tanks. The scale reads the maximum weight value, or the cup is preampively removed. Then opens the solenoid valves, Releasing the build up air pressure in the bottles. Starts over again. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}\label{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+main Initializes the requiered pins. sets up an bit-\/banged i2c interface. Keeps checking for the presence of a cup on the scale. If there is, closes solenoid valves so air pressure can build up in the tanks. The scale reads the maximum weight value, or the cup is preampively removed. Then opens the solenoid valves, Releasing the build up air pressure in the bottles. Starts over again. 
+

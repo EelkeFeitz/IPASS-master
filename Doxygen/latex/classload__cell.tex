@@ -1,0 +1,105 @@
+\hypertarget{classload__cell}{}\section{load\+\_\+cell Class Reference}
+\label{classload__cell}\index{load\+\_\+cell@{load\+\_\+cell}}
+
+
+{\ttfamily \#include $<$load\+\_\+cell.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classload__cell_a7b0d68fac5e159c15a729e75bd39e646}{load\+\_\+cell} (\hyperlink{class_h_x711}{H\+X711} \&A\+Dconverter)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classload__cell}{load\+\_\+cell} constructor initializez A\+Dconverter object. \end{DoxyCompactList}\item 
+void \hyperlink{classload__cell_a39e51be89a5ea75144696b203719d970}{set\+\_\+tare} ()
+\begin{DoxyCompactList}\small\item\em set\+\_\+tare Makes tare the avarage of 5 readings. \end{DoxyCompactList}\item 
+uint\+\_\+least32\+\_\+t \hyperlink{classload__cell_a98f7445e717e9e7e07926c4a11a726cf}{get\+\_\+tare} ()
+\begin{DoxyCompactList}\small\item\em get\+\_\+tare Returns tare. \end{DoxyCompactList}\item 
+uint\+\_\+least32\+\_\+t \hyperlink{classload__cell_ad399c39975e7a62d994566aff4171571}{get\+\_\+raw} ()
+\begin{DoxyCompactList}\small\item\em get\+\_\+raw Returns the uncut digital input from the \hyperlink{class_h_x711}{H\+X711} chip. \end{DoxyCompactList}\item 
+uint\+\_\+least32\+\_\+t \hyperlink{classload__cell_a2cc447989cf3757b51b0fdbc68ba2e58}{get\+\_\+diff} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classload__cell_a2cc447989cf3757b51b0fdbc68ba2e58}{get\+\_\+diff()} Returns 0 if the current reading is lower than tare. Returns the difference between the current reading and tare. \end{DoxyCompactList}\item 
+uint\+\_\+least32\+\_\+t \hyperlink{classload__cell_a60bd12b615cc95061a3ae7f62bf816e3}{get\+\_\+weight\+\_\+grams} ()
+\begin{DoxyCompactList}\small\item\em get\+\_\+weight\+\_\+grams Returns 0 if the current reading is lower than tare. Returns the amouts of grams on the scale. \end{DoxyCompactList}\item 
+void \hyperlink{classload__cell_a2a8d1046ce6e0ce4ea7e0210a4521128}{calibrate\+\_\+grams} (int calibrate\+\_\+weight)
+\begin{DoxyCompactList}\small\item\em calibrate\+\_\+grams Takes \textquotesingle{}calibrate\+\_\+weight\textquotesingle{}. Sets \textquotesingle{}steps\+\_\+per\+\_\+gram\textquotesingle{} as the diference of the current reading and tare devided by the given \textquotesingle{}calibrate\+\_\+weight\textquotesingle{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classload__cell_a7b0d68fac5e159c15a729e75bd39e646}\label{classload__cell_a7b0d68fac5e159c15a729e75bd39e646}} 
+\index{load\+\_\+cell@{load\+\_\+cell}!load\+\_\+cell@{load\+\_\+cell}}
+\index{load\+\_\+cell@{load\+\_\+cell}!load\+\_\+cell@{load\+\_\+cell}}
+\subsubsection{\texorpdfstring{load\+\_\+cell()}{load\_cell()}}
+{\footnotesize\ttfamily load\+\_\+cell\+::load\+\_\+cell (\begin{DoxyParamCaption}\item[{\hyperlink{class_h_x711}{H\+X711} \&}]{A\+Dconverter }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classload__cell}{load\+\_\+cell} constructor initializez A\+Dconverter object. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classload__cell_a2a8d1046ce6e0ce4ea7e0210a4521128}\label{classload__cell_a2a8d1046ce6e0ce4ea7e0210a4521128}} 
+\index{load\+\_\+cell@{load\+\_\+cell}!calibrate\+\_\+grams@{calibrate\+\_\+grams}}
+\index{calibrate\+\_\+grams@{calibrate\+\_\+grams}!load\+\_\+cell@{load\+\_\+cell}}
+\subsubsection{\texorpdfstring{calibrate\+\_\+grams()}{calibrate\_grams()}}
+{\footnotesize\ttfamily void load\+\_\+cell\+::calibrate\+\_\+grams (\begin{DoxyParamCaption}\item[{int}]{calibrate\+\_\+weight }\end{DoxyParamCaption})}
+
+
+
+calibrate\+\_\+grams Takes \textquotesingle{}calibrate\+\_\+weight\textquotesingle{}. Sets \textquotesingle{}steps\+\_\+per\+\_\+gram\textquotesingle{} as the diference of the current reading and tare devided by the given \textquotesingle{}calibrate\+\_\+weight\textquotesingle{}. 
+
+\mbox{\Hypertarget{classload__cell_a2cc447989cf3757b51b0fdbc68ba2e58}\label{classload__cell_a2cc447989cf3757b51b0fdbc68ba2e58}} 
+\index{load\+\_\+cell@{load\+\_\+cell}!get\+\_\+diff@{get\+\_\+diff}}
+\index{get\+\_\+diff@{get\+\_\+diff}!load\+\_\+cell@{load\+\_\+cell}}
+\subsubsection{\texorpdfstring{get\+\_\+diff()}{get\_diff()}}
+{\footnotesize\ttfamily uint\+\_\+least32\+\_\+t load\+\_\+cell\+::get\+\_\+diff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classload__cell_a2cc447989cf3757b51b0fdbc68ba2e58}{get\+\_\+diff()} Returns 0 if the current reading is lower than tare. Returns the difference between the current reading and tare. 
+
+\mbox{\Hypertarget{classload__cell_ad399c39975e7a62d994566aff4171571}\label{classload__cell_ad399c39975e7a62d994566aff4171571}} 
+\index{load\+\_\+cell@{load\+\_\+cell}!get\+\_\+raw@{get\+\_\+raw}}
+\index{get\+\_\+raw@{get\+\_\+raw}!load\+\_\+cell@{load\+\_\+cell}}
+\subsubsection{\texorpdfstring{get\+\_\+raw()}{get\_raw()}}
+{\footnotesize\ttfamily uint\+\_\+least32\+\_\+t load\+\_\+cell\+::get\+\_\+raw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+\_\+raw Returns the uncut digital input from the \hyperlink{class_h_x711}{H\+X711} chip. 
+
+\mbox{\Hypertarget{classload__cell_a98f7445e717e9e7e07926c4a11a726cf}\label{classload__cell_a98f7445e717e9e7e07926c4a11a726cf}} 
+\index{load\+\_\+cell@{load\+\_\+cell}!get\+\_\+tare@{get\+\_\+tare}}
+\index{get\+\_\+tare@{get\+\_\+tare}!load\+\_\+cell@{load\+\_\+cell}}
+\subsubsection{\texorpdfstring{get\+\_\+tare()}{get\_tare()}}
+{\footnotesize\ttfamily uint\+\_\+least32\+\_\+t load\+\_\+cell\+::get\+\_\+tare (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+\_\+tare Returns tare. 
+
+\mbox{\Hypertarget{classload__cell_a60bd12b615cc95061a3ae7f62bf816e3}\label{classload__cell_a60bd12b615cc95061a3ae7f62bf816e3}} 
+\index{load\+\_\+cell@{load\+\_\+cell}!get\+\_\+weight\+\_\+grams@{get\+\_\+weight\+\_\+grams}}
+\index{get\+\_\+weight\+\_\+grams@{get\+\_\+weight\+\_\+grams}!load\+\_\+cell@{load\+\_\+cell}}
+\subsubsection{\texorpdfstring{get\+\_\+weight\+\_\+grams()}{get\_weight\_grams()}}
+{\footnotesize\ttfamily uint\+\_\+least32\+\_\+t load\+\_\+cell\+::get\+\_\+weight\+\_\+grams (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+\_\+weight\+\_\+grams Returns 0 if the current reading is lower than tare. Returns the amouts of grams on the scale. 
+
+\mbox{\Hypertarget{classload__cell_a39e51be89a5ea75144696b203719d970}\label{classload__cell_a39e51be89a5ea75144696b203719d970}} 
+\index{load\+\_\+cell@{load\+\_\+cell}!set\+\_\+tare@{set\+\_\+tare}}
+\index{set\+\_\+tare@{set\+\_\+tare}!load\+\_\+cell@{load\+\_\+cell}}
+\subsubsection{\texorpdfstring{set\+\_\+tare()}{set\_tare()}}
+{\footnotesize\ttfamily void load\+\_\+cell\+::set\+\_\+tare (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+set\+\_\+tare Makes tare the avarage of 5 readings. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/eelke/\+Documents/\+School/\+Vervolgopleiding/\+Hogeschool Utrecht/\+Leerjaar 1/\+Blok 4/\+O\+O\+P\+C/v1oopc-\/practica/\+I\+P\+A\+S\+S4.\+0/\hyperlink{load__cell_8hpp}{load\+\_\+cell.\+hpp}\item 
+C\+:/\+Users/eelke/\+Documents/\+School/\+Vervolgopleiding/\+Hogeschool Utrecht/\+Leerjaar 1/\+Blok 4/\+O\+O\+P\+C/v1oopc-\/practica/\+I\+P\+A\+S\+S4.\+0/\hyperlink{load__cell_8cpp}{load\+\_\+cell.\+cpp}\end{DoxyCompactItemize}
